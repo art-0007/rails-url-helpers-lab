@@ -1,1 +1,5 @@
 <h1><%= @student.to_s %></h1>
+
+<p> This student is currently <%=@active%>.</p>
+
+<div><%= link_to @student, "/students/#{@student.id}/activate" %>
